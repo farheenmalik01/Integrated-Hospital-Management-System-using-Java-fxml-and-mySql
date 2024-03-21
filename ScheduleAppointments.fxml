@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalms.ScheduleAppointments">
+    <left>
+        <AnchorPane prefHeight="200.0" prefWidth="270.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="85.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catalyst">
+                    <font>
+                        <Font name="Bell MT Bold" size="24.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+    </left>
+
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="430.0" BorderPane.alignment="CENTER">
+    <children>
+        <Text layoutX="158.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Schedule Appointment">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Text>
+        <ComboBox fx:id="doctorComboBox" layoutX="114.0" layoutY="120.0" prefWidth="300.0" promptText="Select Doctor" />
+        <ComboBox fx:id="timeComboBox" layoutX="114.0" layoutY="160.0" prefWidth="300.0" promptText="Select Time" />
+        <Button layoutX="217.0" layoutY="210.0" mnemonicParsing="false" onAction="#scheduleAppointments" text="Schedule" />
+        <Button fx:id="goBackButton" layoutX="219.0" layoutY="246.0" mnemonicParsing="false" onAction="#goBack" text="Go Back" />
+    </children>
+</AnchorPane>
+    </right>
+
+</BorderPane>

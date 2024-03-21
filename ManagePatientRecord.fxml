@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalms.ManagePatientRecord">
+    <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+        <left>
+            <AnchorPane prefHeight="200.0" prefWidth="280.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="107.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catalyst">
+                    <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                    </font>
+                </Text>
+            </AnchorPane>
+        </left>
+        <right>
+            <AnchorPane prefHeight="400.0" prefWidth="244.0" BorderPane.alignment="CENTER">
+                <Text fontSmoothingType="LCD" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Patient Record">
+                    <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="patientNameField" alignment="CENTER" layoutX="79.0" layoutY="117.0" promptText="Patient Name" />
+                <TextField fx:id="patientAgeField" alignment="CENTER" layoutX="79.0" layoutY="151.0" promptText="Patient Age" />
+                <TextField fx:id="diagnosisField" alignment="CENTER" layoutX="79.0" layoutY="187.0" promptText="Diagnosis" />
+                <TextField fx:id="treatmentField" alignment="CENTER" layoutX="79.0" layoutY="222.0" promptText="Treatment" />
+
+                <Button fx:id="addPatientButton" layoutX="9.0" layoutY="258.0" mnemonicParsing="false" onAction="#addPatientClicked" prefHeight="25.0" prefWidth="168.0" text="Add Patient" />
+                <Button fx:id="updatePatientButton" layoutX="9.0" layoutY="294.0" mnemonicParsing="false" onAction="#updatePatientClicked" prefHeight="25.0" prefWidth="168.0" text="Update Patient" />
+                <Button fx:id="deletePatientButton" layoutX="9.0" layoutY="332.0" mnemonicParsing="false" onAction="#deletePatientClicked" prefHeight="25.0" prefWidth="168.0" text="Delete Patient" />
+                <Button fx:id="goBackButton" layoutX="63.0" layoutY="367.0" mnemonicParsing="false" onAction="#goBack" text="Go Back" />
+            </AnchorPane>
+        </right>
+        <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                <Label layoutX="90.0" layoutY="152.0" text="Patient Age">
+                    <font>
+                        <Font name="Bell MT Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="98.0" layoutY="187.0" text="Diagnosis">
+                    <font>
+                        <Font name="Bell MT Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="95.0" layoutY="220.0" text="Treatment">
+                    <font>
+                        <Font name="Bell MT Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="88.0" layoutY="118.0" text="Patient Name">
+                    <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                    </font>
+                </Label>
+            </AnchorPane>
+        </center>
+    </BorderPane>
+</AnchorPane>

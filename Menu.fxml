@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane prefHeight="520.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalms.Menu">
+    <top>
+        <HBox style="-fx-background-color: black;" prefHeight="15.0" prefWidth="1000.0">
+            <Text fill="white" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To Catalyst!">
+                <font>
+                    <Font name="Bell MT Bold" size="24.0" />
+                </font>
+            </Text>
+            <HBox.margin>
+                <Insets left="50.0"/>
+            </HBox.margin>
+        </HBox>
+    </top>
+    <bottom>
+        <HBox style="-fx-background-color: black;" prefHeight="15.0" prefWidth="1000.0"/>
+    </bottom>
+    <left>
+        <VBox style="-fx-background-color: black;" prefHeight="780.0" prefWidth="10.0"/>
+    </left>
+    <right>
+        <VBox style="-fx-background-color: black;" prefHeight="780.0" prefWidth="10.0"/>
+    </right>
+    <center>
+        <VBox alignment="CENTER" prefHeight="780.0" prefWidth="980.0">
+            <HBox style="-fx-background-color: white;" prefHeight="100.0" prefWidth="780.0">
+                <!-- Text node is moved to the top HBox -->
+            </HBox>
+            <HBox>
+                <VBox style="-fx-background-color: black;" prefHeight="600.0" prefWidth="250.0">
+                    <!-- Empty VBox for the left black boundary -->
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="600.0" prefWidth="500.0">
+                    <Button fx:id="RegisterButton" layoutY="120.0" mnemonicParsing="false" onAction="#setRegisterButton" prefHeight="25.0" prefWidth="168.0" text="Sign up" />
+                    <Button fx:id="LoginButton" layoutY="160.0" mnemonicParsing="false" onAction="#OpenLoginPage" prefHeight="25.0" prefWidth="168.0" text="Login" />
+                    <Button fx:id="FeedbackButton" layoutY="200.0" mnemonicParsing="false" onAction="#OpenFeedback" prefHeight="25.0" prefWidth="168.0" text="Feedback" />
+                    <Button fx:id="AppointmentButton" layoutY="240.0" mnemonicParsing="false" onAction="#ScheduleAppointment" prefHeight="25.0" prefWidth="168.0" text="Schedule Appointments" />
+                    <Button fx:id="ManageRecordsButton" layoutY="280.30" mnemonicParsing="false" onAction="#ManagePatientRecords" prefHeight="25.0" prefWidth="168.0" text="Manage Patient Records" />
+                    <Button fx:id="BillingButton" layoutY="320.0" mnemonicParsing="false" onAction="#OpenBilling" prefHeight="25.0" prefWidth="168.0" text="Billing And Payment" />
+                    <Button fx:id="ReportsButton" layoutY="360.30" mnemonicParsing="false" onAction="#OpenReports" prefHeight="25.0" prefWidth="168.0" text="View Report" />
+                    <Button fx:id="InventoryButton" layoutY="400.0" mnemonicParsing="false" onAction="#OpenInventory" prefHeight="25.0" prefWidth="168.0" text="Inventory Management" />
+                </VBox>
+                <VBox style="-fx-background-color: black;" prefHeight="600.0" prefWidth="250.0">
+                    <!-- Empty VBox for the right black boundary -->
+                </VBox>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

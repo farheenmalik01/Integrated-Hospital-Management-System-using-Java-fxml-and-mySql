@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalms.register">
+    <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+        <left>
+            <AnchorPane prefHeight="200.0" prefWidth="280.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catalyst">
+                    <font>
+                        <Font name="Bell MT Bold" size="24.0" />
+                    </font>
+                </Text>
+            </AnchorPane>
+        </left>
+        <right>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                <Text fontSmoothingType="LCD" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up">
+                    <font>
+                        <Font name="Bell MT Bold" size="24.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="userEmailField" alignment="CENTER" layoutX="26.0" layoutY="147.0" promptText="example@traveller.com" />
+                <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="26.0" layoutY="181.0" promptText="Password" />
+
+                <Button fx:id="SignInButton" layoutX="-43.0" layoutY="257.0" mnemonicParsing="false" onAction="#registerButtonClicked" prefHeight="25.0" prefWidth="168.0" text="Sign in" />
+                <Button fx:id="LoginButton" layoutX="-43.0" layoutY="292.0" mnemonicParsing="false" onAction="#OpenLoginPage" prefHeight="25.0" prefWidth="168.0" text="Login to existing account" />
+                <Button fx:id="goBackButton" layoutX="10.0" layoutY="331.0" mnemonicParsing="false" onAction="#goBack" text="Go Back" />
+                <TextField fx:id="usernameField1" alignment="CENTER" layoutX="26.0" layoutY="111.0" promptText="Full Name" />
+                <PasswordField fx:id="passwordField1" alignment="CENTER" layoutX="26.0" layoutY="213.0" promptText="Confirm Password" />
+            </AnchorPane>
+        </right>
+        <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                <Label layoutX="46.0" layoutY="147.0" text="UserEmail">
+                    <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="46.0" layoutY="181.0" text="Password">
+                    <font>
+                        <Font name="Bell MT Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="46.0" layoutY="112.0" text="User name">
+                    <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="32.0" layoutY="214.0" text="Re-Password">
+                    <font>
+                        <Font name="Bell MT Bold" size="20.0" />
+                    </font>
+                </Label>
+            </AnchorPane>
+        </center>
+    </BorderPane>
+</AnchorPane>
